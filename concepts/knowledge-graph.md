@@ -32,7 +32,7 @@ Edges connect thoughts with typed relationships:
 
 ```
 [DECISION] Use SurrealDB  --implements-->  [PATTERN] Graph-native storage
-[INSIGHT] Privacy wedge   --leads_to-->    [STRATEGY] Open-source ARX
+[INSIGHT] Privacy wedge   --leads_to-->    [STRATEGY] Privacy-first platform
 [TASK] Add rate limiting  --blocks-->      [TASK] Launch beta
 ```
 

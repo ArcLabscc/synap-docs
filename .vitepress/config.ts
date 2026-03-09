@@ -1,17 +1,15 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Synap Docs',
-  description: 'Documentation for ARX — your personal knowledge graph for AI',
+  title: 'Synap',
+  description: 'Documentation for Synap — personal knowledge graph infrastructure for AI',
+  appearance: 'dark',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    ['link', { href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap', rel: 'stylesheet' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
   ],
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'Synap',
+    siteTitle: 'synap',
     nav: [
       { text: 'Guide', link: '/guide/quickstart' },
       { text: 'API', link: '/api/overview' },
@@ -72,8 +70,8 @@ export default defineConfig({
       provider: 'local'
     },
     footer: {
-      message: 'Built by Arc Labs',
-      copyright: 'Copyright 2025-2026 Arc Labs'
+      message: 'Built by <a href="https://synap.ing" style="color:#58a6ff">Arc Labs</a>',
+      copyright: 'Copyright 2025-2026 Arc Labs. All rights reserved.'
     },
     editLink: {
       pattern: 'https://github.com/ArcLabscc/synap-docs/edit/main/:path',
