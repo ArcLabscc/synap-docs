@@ -436,8 +436,6 @@ Create a new session record. Called at the start of a Claude Code session to tra
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `session_id` | string | Yes | The Claude Code session ID (usually a UUID) |
-| `hostname` | string | No | Device hostname (e.g., `labs`, `hub`) |
-| `tailscale_ip` | string | No | Device Tailscale IP |
 | `device_type` | string | No | Device type (e.g., `linux`, `macos`) |
 
 #### `midbrain_list_sessions`
