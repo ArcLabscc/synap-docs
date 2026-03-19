@@ -28,22 +28,27 @@ export default defineConfig({
         ]
       },
       {
-        text: 'AI Tool Integration',
+        text: 'Products',
+        items: [
+          { text: 'iOS App', link: '/guide/ios' },
+          { text: 'CLI Reference', link: '/guide/cli' },
+          { text: 'MCP Server', link: '/guide/mcp' },
+        ]
+      },
+      {
+        text: 'AI Tool Setup',
         items: [
           { text: 'Claude Code', link: '/guide/claude-code' },
           { text: 'Claude Desktop', link: '/guide/claude-desktop' },
           { text: 'Cursor', link: '/guide/cursor' },
           { text: 'VS Code', link: '/guide/vscode' },
-          { text: 'Synap iOS App', link: '/guide/ios-app' },
         ]
       },
       {
-        text: 'MCP Tools',
+        text: 'API Reference',
         items: [
           { text: 'Overview', link: '/api/overview' },
-          { text: 'Search & Recall', link: '/api/search' },
-          { text: 'Capture & Manage', link: '/api/capture' },
-          { text: 'Graph Traversal', link: '/api/graph' },
+          { text: 'REST API', link: '/api/reference' },
         ]
       },
       {
