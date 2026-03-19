@@ -469,3 +469,17 @@ body {
     font-size: 1.25rem !important;
   }
 }
+
+/* Self-host Sixtyfour Convergence for brand wordmark */
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+/* Nav wordmark — Sixtyfour Convergence purple */
+.VPNavBar .title {
+  font-family: 'Sixtyfour Convergence', monospace !important;
+  font-palette: --synap-purple !important;
+  color: #bc8cff !important;
+  -webkit-text-fill-color: #bc8cff !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
