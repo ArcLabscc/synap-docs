@@ -483,3 +483,46 @@ body {
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
 }
+
+/* Hero name "synap" — Sixtyfour Convergence */
+.VPHero .name {
+  font-family: 'Sixtyfour Convergence', monospace !important;
+  font-palette: --synap-purple !important;
+  color: #bc8cff !important;
+  -webkit-text-fill-color: #bc8cff !important;
+  background: none !important;
+}
+
+/* Get Started button — purple gradient matching marketing */
+.VPButton.brand {
+  background: linear-gradient(135deg, #bc8cff 0%, #a370ff 100%) !important;
+  border-color: transparent !important;
+  color: #0d1117 !important;
+}
+.VPButton.brand:hover {
+  background: linear-gradient(135deg, #d2b0ff 0%, #bc8cff 100%) !important;
+  box-shadow: 0 4px 16px rgba(188, 140, 255, 0.3) !important;
+}
+
+/* Feature card top accent — purple */
+.VPFeature::before {
+  background: linear-gradient(90deg, transparent 0%, rgba(188, 140, 255, 0.5) 30%, rgba(188, 140, 255, 0.3) 70%, transparent 100%) !important;
+}
+.VPFeature:hover {
+  border-color: rgba(188, 140, 255, 0.4) !important;
+}
+
+/* Hero logo glow — purple */
+.VPHero .VPImage {
+  filter: drop-shadow(0 0 40px rgba(188, 140, 255, 0.25)) !important;
+}
+
+/* Selection — purple */
+::selection {
+  background-color: rgba(188, 140, 255, 0.3) !important;
+}
+
+/* Code highlight line — purple tint */
+.vp-doc div[class*="language-"] {
+  --vp-code-line-highlight-color: rgba(188, 140, 255, 0.08) !important;
+}
