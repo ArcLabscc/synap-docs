@@ -3,8 +3,27 @@
    Mirrors synap.ing marketing site exactly
    ============================================================ */
 
-/* ── Font Import ── */
+/* ── Font Imports ── */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* Sixtyfour Convergence — self-hosted with COLRv1 color override */
+@font-face {
+  font-family: 'Sixtyfour Convergence';
+  src: url('/fonts/SixtyfourConvergence.ttf') format('truetype');
+  font-display: swap;
+}
+@font-palette-values --synap-purple {
+  font-family: "Sixtyfour Convergence";
+  override-colors:
+    0 #bc8cff,
+    1 #9b6dff,
+    2 #d2b0ff,
+    3 #bc8cff,
+    4 #bc8cff,
+    5 #bc8cff,
+    6 #bc8cff,
+    7 #bc8cff;
+}
 
 /* ── Base Variables ── */
 :root {
@@ -20,8 +39,8 @@
   /* VitePress Brand Overrides */
   --vp-c-brand-1: #bc8cff;
   --vp-c-brand-2: #d2b0ff;
-  --vp-c-brand-3: #39d2c0;
-  --vp-c-brand-soft: rgba(88, 166, 255, 0.15);
+  --vp-c-brand-3: #a370ff;
+  --vp-c-brand-soft: rgba(188, 140, 255, 0.15);
 
   /* Font System */
   --vp-font-family-base: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
@@ -47,7 +66,7 @@
   --vp-c-text-3: #7d8590;
 
   /* Button colors */
-  --vp-button-brand-bg: linear-gradient(135deg, #bc8cff 0%, #a370ff 100%);
+  --vp-button-brand-bg: #bc8cff;
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #ffffff;
   --vp-button-brand-hover-border: transparent;
@@ -470,8 +489,7 @@ body {
   }
 }
 
-/* Self-host Sixtyfour Convergence for brand wordmark */
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+/* Sixtyfour Convergence loaded in combined @import at top */
 
 /* Nav wordmark — Sixtyfour Convergence purple */
 .VPNavBar .title {
@@ -525,4 +543,55 @@ body {
 /* Code highlight line — purple tint */
 .vp-doc div[class*="language-"] {
   --vp-code-line-highlight-color: rgba(188, 140, 255, 0.08) !important;
+}
+
+/* NUCLEAR — force purple on everything VitePress touches */
+:root {
+  --vp-c-brand-1: #bc8cff !important;
+  --vp-c-brand-2: #d2b0ff !important;
+  --vp-c-brand-3: #a370ff !important;
+  --vp-c-brand-soft: rgba(188, 140, 255, 0.15) !important;
+  --vp-button-brand-bg: #bc8cff !important;
+  --vp-button-brand-hover-bg: #d2b0ff !important;
+  --vp-button-brand-active-bg: #a370ff !important;
+  --vp-button-brand-text: #0d1117 !important;
+  --vp-button-brand-hover-text: #0d1117 !important;
+  --vp-button-brand-active-text: #0d1117 !important;
+  --vp-button-brand-border: transparent !important;
+  --vp-button-brand-hover-border: transparent !important;
+}
+html.dark {
+  --vp-c-brand-1: #bc8cff !important;
+  --vp-c-brand-2: #d2b0ff !important;
+  --vp-c-brand-3: #a370ff !important;
+  --vp-button-brand-bg: #bc8cff !important;
+  --vp-button-brand-hover-bg: #d2b0ff !important;
+  --vp-button-brand-active-bg: #a370ff !important;
+  --vp-button-brand-text: #0d1117 !important;
+  --vp-button-brand-hover-text: #0d1117 !important;
+}
+
+/* Direct element override as last resort */
+.VPButton.brand {
+  background-color: #bc8cff !important;
+  border-color: transparent !important;
+  color: #0d1117 !important;
+}
+.VPButton.brand:hover {
+  background-color: #d2b0ff !important;
+}
+
+/* Hero name clip — override the gradient mask */
+.VPHero .name.clip {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #bc8cff !important;
+  font-family: 'Sixtyfour Convergence', monospace !important;
+  font-palette: --synap-purple !important;
+}
+
+/* Sidebar active link */
+.VPSidebarItem.is-active > .item .link > .text {
+  color: #bc8cff !important;
 }
