@@ -24,6 +24,7 @@ export default defineConfig({
           { text: 'Quickstart', link: '/guide/quickstart' },
           { text: 'Installation', link: '/guide/installation' },
           { text: 'Configuration', link: '/guide/configuration' },
+          { text: 'CLI Reference', link: '/guide/cli' },
         ]
       },
       {
@@ -70,7 +71,7 @@ export default defineConfig({
       provider: 'local'
     },
     footer: {
-      message: 'Built by <a href="https://synap.ing" style="color:#58a6ff">Arc Labs</a>',
+      message: 'Built by <a href="https://synap.ing" style="color:#bc8cff">Arc Labs</a>',
       copyright: 'Copyright 2025-2026 Arc Labs. All rights reserved.'
     },
     editLink: {
