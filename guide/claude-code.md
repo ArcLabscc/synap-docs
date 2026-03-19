@@ -5,7 +5,7 @@ Synap integrates deeply with Claude Code through MCP tools, slash commands, and 
 ## Setup
 
 ```bash
-npx arx-setup
+curl -fsSL https://get.synap.ing | sh
 ```
 
 This adds `ARX_URL` and `ARX_API_KEY` to your `~/.claude/settings.json`. Restart Claude Code to activate.

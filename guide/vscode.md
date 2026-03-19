@@ -10,7 +10,7 @@ Add to your VS Code settings or `.vscode/mcp.json`:
 {
   "servers": {
     "arx": {
-      "command": "npx",
+      "command": "~/.local/bin/synap-mcp",
       "args": ["-y", "arx-mcp-server"],
       "env": {
         "ARX_CONFIG": "~/.arx/config.json"

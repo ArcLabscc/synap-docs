@@ -49,7 +49,7 @@ Your API key is created during account registration and returned on login. To ro
 1. Log into the Synap dashboard at `app.synap.ing`
 2. Navigate to Settings > API Keys
 3. Generate a new key
-4. Run `npx arx-setup` again to update all tools
+4. Run `synap setup` again to update all tools
 
 ::: warning
 API keys are sensitive credentials. Never commit them to version control or share them publicly.

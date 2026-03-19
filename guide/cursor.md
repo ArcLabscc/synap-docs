@@ -5,7 +5,7 @@ Synap connects to Cursor as an MCP server via `~/.cursor/mcp.json`.
 ## Setup
 
 ```bash
-npx arx-setup
+curl -fsSL https://get.synap.ing | sh
 ```
 
 The setup CLI detects Cursor and writes the MCP config automatically. Restart Cursor to activate.
@@ -18,7 +18,7 @@ Add to `~/.cursor/mcp.json`:
 {
   "mcpServers": {
     "arx": {
-      "command": "npx",
+      "command": "~/.local/bin/synap-mcp",
       "args": ["-y", "arx-mcp-server"],
       "env": {
         "ARX_CONFIG": "~/.arx/config.json"

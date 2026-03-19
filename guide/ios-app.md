@@ -17,7 +17,7 @@ Available on the App Store: [Synap](https://apps.apple.com/app/synap)
 ## Setup
 
 1. Open Synap and tap **Log In**
-2. Enter your email and password (same account as `npx arx-setup`)
+2. Enter your email and password (same account as `synap login`)
 3. Your knowledge graph loads automatically
 
 All thoughts captured in the app appear in your AI tool sessions, and vice versa. Same account, same graph, everywhere.

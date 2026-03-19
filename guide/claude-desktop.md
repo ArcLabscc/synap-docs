@@ -5,7 +5,7 @@ Synap connects to Claude Desktop as an MCP server, giving Claude access to your 
 ## Setup
 
 ```bash
-npx arx-setup
+curl -fsSL https://get.synap.ing | sh
 ```
 
 The setup CLI detects Claude Desktop and adds the MCP server config to:
@@ -23,7 +23,7 @@ If you prefer to configure manually, add this to your Claude Desktop config:
 {
   "mcpServers": {
     "arx": {
-      "command": "npx",
+      "command": "~/.local/bin/synap-mcp",
       "args": ["-y", "arx-mcp-server"],
       "env": {
         "ARX_CONFIG": "~/.arx/config.json"

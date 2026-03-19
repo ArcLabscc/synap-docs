@@ -10,7 +10,7 @@ Get Synap connected in under 60 seconds.
 ## Install
 
 ```bash
-npx arx-setup
+curl -fsSL https://get.synap.ing | sh
 ```
 
 This will:
@@ -45,7 +45,7 @@ The setup CLI:
 3. Configured `arx-mcp-server` as an MCP server in Claude Desktop (if installed)
 4. Did the same for Cursor (if installed)
 
-The MCP server runs via `npx arx-mcp-server` — no binary to download or update. It reads your config file and proxies requests to the ARX API.
+The MCP server is installed as a compiled binary via the installer. Run `synap setup` to configure it for your AI tools.
 
 ## Next steps
 

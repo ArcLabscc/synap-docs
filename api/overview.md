@@ -33,4 +33,4 @@ You don't need to remember tool names. Just describe what you want:
 
 ## Authentication
 
-The MCP server reads credentials from `~/.arx/config.json` (written by `npx arx-setup`). Requests are authenticated via the `X-ARX-Key` header with your API key.
+The MCP server reads credentials from `~/.arx/config.json` (written by `synap setup`). Requests are authenticated via the `X-ARX-Key` header with your API key.

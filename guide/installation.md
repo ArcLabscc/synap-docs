@@ -3,7 +3,7 @@
 ## Automatic (recommended)
 
 ```bash
-npx arx-setup
+curl -fsSL https://get.synap.ing | sh
 ```
 
 The setup CLI detects your AI tools and configures everything. Supports:
@@ -87,7 +87,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "arx": {
-      "command": "npx",
+      "command": "~/.local/bin/synap-mcp",
       "args": ["-y", "arx-mcp-server"],
       "env": {
         "ARX_CONFIG": "~/.arx/config.json"
@@ -105,7 +105,7 @@ Add to `~/.cursor/mcp.json`:
 {
   "mcpServers": {
     "arx": {
-      "command": "npx",
+      "command": "~/.local/bin/synap-mcp",
       "args": ["-y", "arx-mcp-server"],
       "env": {
         "ARX_CONFIG": "~/.arx/config.json"
@@ -117,16 +117,16 @@ Add to `~/.cursor/mcp.json`:
 
 ## Multiple devices
 
-Run `npx arx-setup` on each device. Login with the same account — all devices share the same knowledge graph.
+Run `curl -fsSL https://get.synap.ing | sh` on each device. Login with the same account — all devices share the same knowledge graph.
 
 ## Updating
 
-The MCP server runs via `npx`, which always pulls the latest version. No manual updates needed.
+The MCP server is a compiled binary installed by the installer. Run `synap setup` to update.
 
 To update the setup CLI itself:
 
 ```bash
-npx arx-setup@latest
+curl -fsSL https://get.synap.ing | sh@latest
 ```
 
 ## Uninstalling

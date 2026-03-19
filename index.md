@@ -29,7 +29,7 @@ features:
     details: Your knowledge graph lives on your terms. Cloud-hosted for convenience, self-hosted for full control. Your data never trains models.
   - icon: "&#8857;"
     title: Zero Config
-    details: npx arx-setup — login, and every AI tool on your machine is connected. No JSON editing, no binary downloads.
+    details: curl -fsSL https://get.synap.ing | sh — login, and every AI tool on your machine is connected. No JSON editing, no manual configuration.
   - icon: "&#8862;"
     title: Native iOS App
     details: 3D brain visualization, voice capture, Apple Watch companion. Capture thoughts anywhere, see them everywhere.
