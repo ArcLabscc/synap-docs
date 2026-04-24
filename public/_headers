@@ -1,0 +1,7 @@
+/*
+  Cache-Control: public, max-age=60, s-maxage=60, must-revalidate
+  X-Robots-Tag: noindex, nofollow
+
+/
+  Cache-Control: public, max-age=300, s-maxage=300, must-revalidate
+  X-Robots-Tag: noindex, nofollow
