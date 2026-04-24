@@ -2,10 +2,11 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Synap',
-  description: 'Documentation for Synap — personal knowledge graph infrastructure for AI',
+  description: 'Access restricted — authorized access available on request.',
   appearance: 'dark',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'robots', content: 'noindex, nofollow' }],
     ['style', {}, `
       @font-face { font-family: 'Sixtyfour Convergence'; src: url('/fonts/SixtyfourConvergence.ttf') format('truetype'); font-display: swap; }
       @font-palette-values --synap-purple { font-family: "Sixtyfour Convergence"; override-colors: 0 #bc8cff, 1 #9b6dff, 2 #d2b0ff, 3 #bc8cff, 4 #bc8cff, 5 #bc8cff, 6 #bc8cff, 7 #bc8cff; }
@@ -14,7 +15,6 @@ export default defineConfig({
       .VPButton.brand:hover { background-color: #d2b0ff !important; }
       .VPHero .name.clip { background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: #bc8cff !important; font-family: 'Sixtyfour Convergence', monospace !important; font-palette: --synap-purple; }
       .VPNavBar .title { font-family: 'Sixtyfour Convergence', monospace !important; color: #bc8cff !important; -webkit-text-fill-color: #bc8cff !important; }
-      .VPSidebarItem.is-active > .item .link > .text { color: #bc8cff !important; }
       .VPFeature::before { background: linear-gradient(90deg, transparent, rgba(188,140,255,0.5) 30%, rgba(188,140,255,0.3) 70%, transparent) !important; }
       .VPFeature:hover { border-color: rgba(188,140,255,0.4) !important; }
       .vp-doc a { color: #bc8cff !important; }
@@ -26,77 +26,15 @@ export default defineConfig({
     logo: '/logo.svg',
     siteTitle: 'synap',
     nav: [
-      { text: 'Guide', link: '/guide/quickstart' },
-      { text: 'API', link: '/api/overview' },
-      { text: 'Concepts', link: '/concepts/knowledge-graph' },
       { text: 'synap.ing', link: 'https://synap.ing' },
     ],
-    sidebar: [
-      {
-        text: 'Getting Started',
-        items: [
-          { text: 'What is Synap?', link: '/guide/what-is-synap' },
-          { text: 'Quickstart', link: '/guide/quickstart' },
-          { text: 'Installation', link: '/guide/installation' },
-          { text: 'Configuration', link: '/guide/configuration' },
-          { text: 'CLI Reference', link: '/guide/cli' },
-        ]
-      },
-      {
-        text: 'Products',
-        items: [
-          { text: 'iOS App', link: '/guide/ios' },
-          { text: 'CLI Reference', link: '/guide/cli' },
-          { text: 'MCP Server', link: '/guide/mcp' },
-        ]
-      },
-      {
-        text: 'AI Tool Setup',
-        items: [
-          { text: 'Claude Code', link: '/guide/claude-code' },
-          { text: 'Claude Desktop', link: '/guide/claude-desktop' },
-          { text: 'Cursor', link: '/guide/cursor' },
-          { text: 'VS Code', link: '/guide/vscode' },
-        ]
-      },
-      {
-        text: 'API Reference',
-        items: [
-          { text: 'Overview', link: '/api/overview' },
-          { text: 'REST API', link: '/api/reference' },
-        ]
-      },
-      {
-        text: 'Concepts',
-        items: [
-          { text: 'Knowledge Graph', link: '/concepts/knowledge-graph' },
-          { text: 'Semantic Search', link: '/concepts/semantic-search' },
-          { text: 'Tagging System', link: '/concepts/tagging' },
-          { text: 'Privacy Architecture', link: '/concepts/privacy' },
-        ]
-      },
-      {
-        text: 'Self-Hosting',
-        items: [
-          { text: 'Overview', link: '/self-hosting/overview' },
-          { text: 'Server Setup', link: '/self-hosting/server' },
-          { text: 'Configuration', link: '/self-hosting/config' },
-        ]
-      }
-    ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/ArcLabscc' }
-    ],
+    sidebar: [],
     search: {
       provider: 'local'
     },
     footer: {
-      message: 'Built by <a href="https://synap.ing" style="color:#bc8cff">Arc Labs</a>',
+      message: 'Patent-pending. Architecture details available under NDA.',
       copyright: 'Copyright 2025-2026 Arc Labs. All rights reserved.'
-    },
-    editLink: {
-      pattern: 'https://github.com/ArcLabscc/synap-docs/edit/main/:path',
-      text: 'Edit this page on GitHub'
     }
   }
 })

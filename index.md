@@ -2,35 +2,23 @@
 layout: home
 hero:
   name: synap
-  text: Give your AI a memory.
-  tagline: Personal knowledge graph infrastructure. One command to install. Works with every AI tool you use.
-  image:
-    src: /logo.svg
-    alt: Synap
+  text: Access restricted.
+  tagline: Synap documentation is temporarily restricted while we finalize our next platform release. Authorized access available on request.
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/quickstart
+      text: Request Access
+      link: mailto:access@synap.ing?subject=Synap%20documentation%20access%20request
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/ArcLabscc
+      text: Enterprise Evaluation
+      link: mailto:access@synap.ing?subject=Synap%20enterprise%20evaluation%20inquiry
 features:
   - icon: "&#9671;"
-    title: Knowledge Graph
-    details: Every thought, decision, and insight stored as connected nodes. Your AI traverses the graph to surface relevant context automatically.
+    title: Active customers and authorized developers
+    details: If you previously had documentation access, contact access@synap.ing for credentialed continued access.
   - icon: "&#9670;"
-    title: Universal Compatibility
-    details: Claude Code, Claude Desktop, Cursor, VS Code — one install, all tools connected via the MCP protocol.
+    title: Enterprise evaluation inquiries
+    details: We welcome conversations under mutual NDA. Reach out to discuss mutual interest.
   - icon: "&#9674;"
-    title: Semantic Search
-    details: Find thoughts by meaning, not just keywords. Conceptual similarity powered by state-of-the-art embeddings.
-  - icon: "&#9830;"
-    title: Privacy by Architecture
-    details: Your knowledge graph lives on your terms. Cloud-hosted for convenience, self-hosted for full control. Your data never trains models.
-  - icon: "&#8857;"
-    title: Zero Config
-    details: curl -fsSL https://get.synap.ing | sh — login, and every AI tool on your machine is connected. No JSON editing, no manual configuration.
-  - icon: "&#8862;"
-    title: Native iOS App
-    details: 3D brain visualization, voice capture, Apple Watch companion. Capture thoughts anywhere, see them everywhere.
+    title: Patent-pending technology
+    details: Synap is protected by US provisional patent application 64/046,959 and related filings. Architecture details and implementation specifics are available only under executed non-disclosure agreement.
 ---
